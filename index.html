@@ -2,62 +2,83 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
+    <title>Keshika Parami Portfolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 40px;
-            background: #f7f7f7;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: white;
-            padding: 30px;
-            border-radius: 8px;
-        }
-        h1 {
+            margin: 0;
+            background: #f4f4f9;
             color: #333;
         }
-        p {
-            line-height: 1.5;
+        header {
+            background: #4a90e2;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        header p {
+            font-size: 18px;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 30px;
         }
         .section {
-            margin-top: 30px;
+            margin-top: 40px;
         }
-        .heading {
-            font-size: 22px;
-            color: #444;
-            margin-bottom: 10px;
+        .section h2 {
+            color: #4a90e2;
+            margin-bottom: 15px;
+        }
+        .section p {
+            line-height: 1.6;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
         }
     </style>
 </head>
 
 <body>
+    <header>
+        <h1>Keshika Parami</h1>
+        <p>Computer Science Undergraduate | Aspiring Developer & Multimedia Creator</p>
+    </header>
+
     <div class="container">
-        <h1>Hello, I am Fleya</h1>
-        <p>I am a Computer Science undergraduate who loves technology and creative projects. This portfolio shows my work, skills, and the progress I make during my degree.</p>
-
-        <div class="section">
-            <div class="heading">About Me</div>
-            <p>I enjoy programming, multimedia design, and exploring new ideas. I am still learning and building my skills step by step.</p>
+        <div class="section" id="about">
+            <h2>About Me</h2>
+            <p>Hello! I am Keshika, a Computer Science undergraduate at Eastern University, Trincomalee. I am passionate about programming, multimedia development, and solving real-world problems with technology. I enjoy learning new skills and building projects that showcase my growth.</p>
         </div>
 
-        <div class="section">
-            <div class="heading">Projects</div>
-            <p>I will add my university projects, personal projects, and assignments here.</p>
+        <div class="section" id="projects">
+            <h2>Projects</h2>
+            <p>I will add my university and personal projects here, including small apps, websites, and assignments I have completed. Each project shows what I learned and the technologies I used.</p>
         </div>
 
-        <div class="section">
-            <div class="heading">Skills</div>
-            <p>Java, HTML, CSS, basic DBMS, multimedia development, problem solving.</p>
+        <div class="section" id="skills">
+            <h2>Skills</h2>
+            <p>Java | HTML | CSS | DBMS | Multimedia Development | Problem Solving</p>
         </div>
 
-        <div class="section">
-            <div class="heading">Contact</div>
+        <div class="section" id="contact">
+            <h2>Contact</h2>
             <p>Email: yourmail@example.com</p>
-            <p>GitHub: yourusername</p>
+            <p>GitHub: <a href="https://github.com/keshika21" target="_blank">keshika21</a></p>
         </div>
     </div>
+
+    <footer>
+        &copy; 2025 Keshika Parami. All rights reserved.
+    </footer>
 </body>
 </html>
