@@ -1,84 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Keshika Parami Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background: #f4f4f9;
-            color: #333;
-        }
-        header {
-            background: #4a90e2;
-            color: white;
-            padding: 40px 0;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 36px;
-        }
-        header p {
-            font-size: 18px;
-        }
-        .container {
-            max-width: 900px;
-            margin: auto;
-            padding: 30px;
-        }
-        .section {
-            margin-top: 40px;
-        }
-        .section h2 {
-            color: #4a90e2;
-            margin-bottom: 15px;
-        }
-        .section p {
-            line-height: 1.6;
-        }
-        footer {
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 40px;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Keshika Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
-
 <body>
-    <header>
-        <h1>Keshika Parami</h1>
-        <p>Computer Science Undergraduate | Aspiring Developer & Multimedia Creator</p>
-    </header>
-
-    <div class="container">
-        <div class="section" id="about">
-            <h2>About Me</h2>
-            <p>Hello! I am Keshika, a Computer Science undergraduate at Eastern University, Trincomalee. I am passionate about programming, multimedia development, and solving real-world problems with technology. I enjoy learning new skills and building projects that showcase my growth.</p>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Keshika</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="#">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#">Skills</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="#">Contact</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
         </div>
-
-        <div class="section" id="projects">
-            <h2>Projects</h2>
-            <p>I will add my university and personal projects here, including small apps, websites, and assignments I have completed. Each project shows what I learned and the technologies I used.</p>
+        <div class="dropdown">
+            <div class="links">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Skills</a>
+                <a href="">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
         </div>
-
-        <div class="section" id="skills">
-            <h2>Skills</h2>
-            <p>Java | HTML | CSS | DBMS | Multimedia Development | Problem Solving</p>
-        </div>
-
-        <div class="section" id="contact">
-            <h2>Contact</h2>
-            <p>Email: yourmail@example.com</p>
-            <p>GitHub: <a href="https://github.com/keshika21" target="_blank">keshika21</a></p>
-        </div>
-    </div>
-
-    <footer>
-        &copy; 2025 Keshika Parami. All rights reserved.
-    </footer>
+    </nav>
+        <section>
+            <div class="main-container">
+                <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+                    <img src="KP.png" alt="">
+                </div>
+                <div class="content">
+                    <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Hey I'm <span>Keshika</span></h1>
+                    <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">I'm a <span></span></div>
+                    <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">A Computer Science undergraduate at Eastern University, Trincomalee Campus. I am passionate about programming, multimedia development, and solving real-world problems with technology. I enjoy learning new skills and building projects that showcase my growth</p>
+                    <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                        <a href="#" ><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                    <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+                        <button>Download CV</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({offset:0});
+        </script>
+        <script>
+            function hamburg(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(0px)"
+            }
+            function cancel(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(-500px)"
+            }
+        </script>
 </body>
 </html>
